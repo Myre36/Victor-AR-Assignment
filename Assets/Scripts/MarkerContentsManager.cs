@@ -41,9 +41,9 @@ public class MarkerContentsManager : MonoBehaviour
 
                 Vector3 minusedPositions = new Vector3(addedImage.transform.position.x, addedImage.transform.position.y - 1f, addedImage.transform.position.z);
 
-                instancedContents = GameObject.Instantiate(contents, minusedPositions, addedImage.transform.rotation);
+                instancedContents = GameObject.Instantiate(contents, addedImage.transform.position, addedImage.transform.rotation);
                 //instancedContents.GetComponent<RotateIsland>().rotationPoint = rotationPoint;
-                //instancedContents.transform.parent = addedImage.transform;
+                instancedContents.transform.parent = addedImage.transform;
             }
         }
 
