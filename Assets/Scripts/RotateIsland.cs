@@ -11,7 +11,9 @@ public class RotateIsland : MonoBehaviour
         {
             return;
         }
-        this.transform.position = rotationPoint.transform.position;
-        this.transform.rotation = rotationPoint.transform.rotation;
+        Vector3 islandTransform = new Vector3(rotationPoint.transform.position.x, rotationPoint.transform.position.y - 1f, rotationPoint.transform.position.z);
+
+        this.transform.position = islandTransform;
+        //this.transform.rotation = rotationPoint.transform.rotation;
     }
 }
