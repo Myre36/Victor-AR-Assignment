@@ -39,7 +39,9 @@ public class MarkerContentsManager : MonoBehaviour
                 //rotationPoint = GameObject.Instantiate(rotationPointPrefab, addedImage.transform.position, addedImage.transform.rotation);
                 //rotationPoint.transform.parent = addedImage.transform;
 
-                instancedContents = GameObject.Instantiate(contents, addedImage.transform.position, addedImage.transform.rotation);
+                Vector3 minusedPositions = new Vector3(addedImage.transform.position.x, addedImage.transform.position.y - 5f, addedImage.transform.position.z);
+
+                instancedContents = GameObject.Instantiate(contents, minusedPositions, addedImage.transform.rotation);
                 //instancedContents.GetComponent<RotateIsland>().rotationPoint = rotationPoint;
                 //instancedContents.transform.parent = addedImage.transform;
             }
