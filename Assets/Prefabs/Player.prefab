@@ -377,9 +377,9 @@ MonoBehaviour:
   playerInput: {fileID: 0}
   model: {fileID: 7383621731231816877}
   cameraTransform: {fileID: 0}
-  moveSpeed: 10
+  moveSpeed: 15
   rotationSpeed: 5
-  jumpForce: 5
+  jumpForce: 7
   jumpCooldown: 0.6
   airMultiplier: 0.4
   coyoteTime: 0.2
